@@ -350,7 +350,7 @@ h1 {
   padding: 0;
 }
 
-//以下、下層ページのデザインコーディング　4/6
+//以下、下層ページのデザイン
 
 #sub_cover {
   padding: 40px 0;
@@ -359,7 +359,6 @@ h1 {
   h2 {
     text-align: center;
     color: white;
-    font-size: 16px;
     font-size: 1.6rem;
     font-weight: bold;
     margin: 0;
@@ -373,7 +372,6 @@ h1 {
     h2 {
       text-align: center;
       color: white;
-      font-size: 32px;
       font-size: 3.2rem;
       font-weight: bold;
       margin: 0;
@@ -382,11 +380,15 @@ h1 {
   }
 }
 
+//Ratina画像対応
+
 @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   #sub_cover {
     background-image: url("../images/news/sub_cover@2x.jpg");
   }
 }
+
+//コンテンツエリア
 
 #contents {
   padding-top: 20px;
@@ -394,13 +396,11 @@ h1 {
     h2 {
       color: #42b9d0;
       border-bottom: 3px solid #42b9d0;
-      font-size: 15px;
       font-size: 1.5rem;
       font-weight: bold;
       padding-bottom: 15px;
     }
     .news_li {
-      font-size: 15px;
       font-size: 1.5rem;
       li {
         list-style: none;
@@ -413,19 +413,22 @@ h1 {
       }
     }
   }
-  #sidebar {
-    padding-bottom: 20px;
-    .pc_sidemenu {
+}
+  
+//サイドバー
+  
+#sidebar {
+  padding-bottom: 20px;
+  .pc_sidemenu {
       h3 {
         color: #42b9d0;
-        font-size: 14px;
         font-size: 1.4rem;
         letter-spacing: 0.2rem;
         font-weight: bold;
         background-color: #f3f9fb;
         padding: 15px;
         margin-bottom: 0px;
-      }
+        }
       li {
         list-style: none;
         display: block;
@@ -444,21 +447,22 @@ h1 {
           }
         }
       }
-    }
-  }
-  #main {
-    h2.company_title {
+   }
+}
+  
+//会社概要ページの表
+  
+#main {
+  h2.company_title {
       margin-bottom: 0px;
-    }
-    th, td {
+  }
+  th, td {
       padding: 20px 0;
       color: #626262;
-      font-size: 14px;
       font-size: 1.4rem;
-    }
-    th {
+  }
+  th {
       padding-right: 20px;
-    }
   }
 }
 
@@ -469,16 +473,19 @@ h1 {
   }
 }
 
+//メインエリア
+
 @media (min-width: 550px) {
   #contents #main {
     padding-right: 20px;
     h2 {
-      font-size: 20px;
       font-size: 2rem;
       padding-bottom: 20px;
     }
   }
 }
+
+//PC表示
 
 @media (min-width: 550px) {
   #contents #main .news_li li {
@@ -492,11 +499,15 @@ h1 {
   }
 }
 
+//スマホでPC表示を消す
+
 @media (max-width: 550px) {
   #contents #sidebar .pc_sidemenu {
     display: none;
   }
 }
+
+//Ratina対応　サイドバーの矢印三角
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   #contents #sidebar .pc_sidemenu li {
